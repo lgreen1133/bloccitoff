@@ -52,3 +52,5 @@ group :development, :test do
 end
 
 gem 'figaro', '1.0'
+
+gem 'bootstrap-sass'
