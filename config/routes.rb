@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :users, only: [:show]
   devise_scope :user do
     authenticated :user do 
-      root to: 'devise/registrations#edit', as: :authenticated
+      root to: 'users#show', as: :authenticated
     end
 
     unauthenticated do 
