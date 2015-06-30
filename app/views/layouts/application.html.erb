@@ -9,6 +9,11 @@
 </head>
 <body>
 
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li><%= link_to "Items", items_path %></li>
+    </ul>
+  </div>
   <p class="navbar-text pull-right">
   <% if current_user %>
   Hello <strong><%= link_to (current_user.name || current_user.email), edit_user_registration_path %>! <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
