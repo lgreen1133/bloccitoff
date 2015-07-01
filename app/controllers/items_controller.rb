@@ -8,7 +8,7 @@ class ItemsController < ApplicationController
 
       if @item.save 
       flash[:notice] = "Item was added to the list"
-      redirect_to @item
+      redirect_to current_user
       else
       flash[:error] = "There was an error adding the item. Please try again."
       render :new
