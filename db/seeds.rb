@@ -9,14 +9,14 @@ require 'faker'
   )
   user.skip_confirmation!
   user.save!
-end
-users = User.all 
 
 # Create Items
 10.times do 
   Item.create!(
-    name: Faker::Lorem.word
+    name: Faker::Lorem.word,
+    user: user 
     )
+  end
 end
 items = Item.all
 
