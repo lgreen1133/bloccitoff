@@ -1,11 +1,11 @@
 class ItemsController < ApplicationController
   def new
-    @item = Items.new(item_params)
-    @new_item = Item.new
+    @item = Item.new
   end
 
     def create
       @item = current_user.items.build(item_params)
+      @new_item = Item.new 
 
       if @item.save 
       flash[:notice] = "Item was added to the list"
