@@ -1,4 +1,11 @@
 <%= content_tag :li, id: "item-#{item.id}" do %>
   <%= item.name %>
   <%= link_to "", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+  <p class="text-right">
+  <em>
+    <small>
+    <%= item.days_left_text %>
+    </small>
+  </em>
+  </p>
 <% end %>
