@@ -58,3 +58,5 @@ gem 'bootstrap-sass'
 gem 'faker'
 
 gem 'pry-rails', :group => :development
+
+gem 'whenever', :require => false
