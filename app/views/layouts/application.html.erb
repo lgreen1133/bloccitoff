@@ -12,7 +12,7 @@
   <div class="container">
     <ul class="nav nav-tabs">
       <li><%= link_to "Home", root_path %></li>
-      <%if current_user %>
+      <% if current_user %>
         <li><%= link_to "My Items", current_user %></li>
       <% end %>
 
@@ -24,7 +24,7 @@
       <%= link_to "Sign in", new_user_session_path, :class => 'navbar-link'  %>
       <% end %>
     </div>
-  
+
     </ul>
 
     <% if flash[:notice] %>
@@ -46,6 +46,6 @@
 
 <%= yield %>
   </div>
-  
+
 </body>
 </html>
