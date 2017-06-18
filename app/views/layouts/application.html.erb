@@ -12,7 +12,7 @@
   <div class="container">
     <ul class="nav nav-tabs">
       <li><%= link_to "Home", root_path %></li>
-      <% if current_user %>
+      <%if current_user %>
         <li><%= link_to "My Items", current_user %></li>
       <% end %>
 
@@ -43,6 +43,9 @@
     <%= flash[:alert] %>
     </div>
     <% end %>
+
+<%= yield %>
+  </div>
 
 <%= yield %>
   </div>
