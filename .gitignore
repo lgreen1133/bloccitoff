@@ -18,3 +18,8 @@
 
 # Ignore application configuration
 /config/application.yml
+/config/newrelic.yml
+
+# Ignore bfg report
+/bloccitoff.git.bfg-report
+/bloccitoff.git
