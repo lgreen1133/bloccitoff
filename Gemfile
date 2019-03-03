@@ -53,8 +53,6 @@ end
 
 gem 'figaro', '1.0'
 
-gem 'bootstrap-sass'
-
 gem 'faker'
 
 gem 'pry-rails', :group => :development
@@ -62,3 +60,7 @@ gem 'pry-rails', :group => :development
 gem 'whenever', :require => false
 
 gem 'newrelic_rpm'
+
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'sprockets-rails', :require => 'sprockets/railtie'
