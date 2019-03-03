@@ -11,7 +11,7 @@ group :production do
 end
 
 group :development do
-   gem 'sqlite3'
+   gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -53,8 +53,6 @@ end
 
 gem 'figaro', '1.0'
 
-gem 'bootstrap-sass'
-
 gem 'faker'
 
 gem 'pry-rails', :group => :development
@@ -62,3 +60,7 @@ gem 'pry-rails', :group => :development
 gem 'whenever', :require => false
 
 gem 'newrelic_rpm'
+
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'sprockets-rails', :require => 'sprockets/railtie'
