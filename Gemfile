@@ -57,7 +57,7 @@ gem 'faker'
 
 gem 'pry-rails', :group => :development
 
-gem 'whenever', :require => false
+gem 'whenever', require: false
 
 gem 'newrelic_rpm'
 
