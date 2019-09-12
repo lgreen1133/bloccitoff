@@ -5,3 +5,5 @@ namespace :todo do
   end
 
 end
+
+# After setting up the rake task, you need to run whenever --update-crontab command in the console to tell Whenever to start running your rake tasks.
